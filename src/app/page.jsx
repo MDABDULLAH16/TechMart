@@ -120,13 +120,13 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       {/* Section 1: Hero Banner */}
       <section className="w-full">
-        <div className="container mx-auto px-4 py-6">
+        <div className="max-w-7xl mx-auto px-4 py-6">
           <Banner />
         </div>
       </section>
       
       {/* Section 2: Welcome & CTA */}
-      <section className="container mx-auto px-4 py-16 text-center">
+      <section className="max-w-7xl mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 mb-6 leading-tight">
             Welcome To <span className="text-blue-600 dark:text-blue-400">Tech Mart</span>
@@ -153,7 +153,7 @@ export default function Home() {
       </section>
 
       {/* Section 3: Product Categories */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
             Shop by Category
@@ -188,7 +188,7 @@ export default function Home() {
       </section>
 
       {/* Section 4: Featured Products */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
             Featured Products
@@ -280,7 +280,7 @@ export default function Home() {
 
       {/* Section 5: Why Choose Us / Features */}
       <section className="bg-white dark:bg-gray-800 py-16">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
               Why Choose TechMart?
@@ -327,7 +327,7 @@ export default function Home() {
       </section>
 
       {/* Section 6: Statistics */}
-      <section className="container mx-auto px-4 py-16">
+      <section className="max-w-7xl mx-auto px-4 py-16">
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 rounded-2xl p-12 text-white">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -357,7 +357,7 @@ export default function Home() {
 
       {/* Section 7: Customer Testimonials */}
       <section className="bg-white dark:bg-gray-800 py-16">
-        <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
               What Our Customers Say

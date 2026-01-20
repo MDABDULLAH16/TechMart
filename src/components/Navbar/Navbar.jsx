@@ -63,8 +63,8 @@ const Navbar = () => {
             : "bg-white dark:bg-gray-950 shadow-sm"
         }`}
       >
-        {/* Fixed: Removed the gray-400/white background from container to allow the nav background to show */}
-        <div className="container mx-auto px-4">
+        {/* Fixed: Removed the gray-400/white background from max-w-7xl to allow the nav background to show */}
+        <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo Section */}
             <Link href="/" className="flex items-center space-x-3 group">
@@ -179,7 +179,7 @@ const Navbar = () => {
               : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
-          <div className="container mx-auto px-4 py-6">
+          <div className="max-w-7xl mx-auto px-4 py-6">
             <div className="space-y-2">
               {navLinks.map((link) => {
                 const IconComponent = link.icon;
