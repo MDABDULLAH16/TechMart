@@ -3,9 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
- 
- 
- 
+import Providers from "@/providers/authProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +17,14 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "TechMart - Best Tech and Gadget Store",
-  description: "Discover the latest technology, gadgets, and smart solutions at TechMart. Your one-stop destination for smartphones, laptops, gaming gear, and more.",
+  description:
+    "Discover the latest technology, gadgets, and smart solutions at TechMart. Your one-stop destination for smartphones, laptops, gaming gear, and more.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -36,7 +33,9 @@ export default function RootLayout({ children }) {
           storageKey="techmart-theme"
         >
           <Navbar />
-          <main className="pt-16 lg:pt-20">{children}</main>
+          <main className="pt-16 lg:pt-20">
+            <Providers>{children}</Providers>
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

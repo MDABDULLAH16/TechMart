@@ -149,9 +149,9 @@ const Navbar = () => {
             </button>
 
             {/* User Account */}
-            <button className="hidden sm:flex p-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-300">
+            <Link href='/login' className="hidden sm:flex p-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-all duration-300">
               <User className="w-5 h-5" />
-            </button>
+            </Link>
 
             {/* Mobile Menu Button */}
             <button
