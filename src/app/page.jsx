@@ -125,11 +125,7 @@ export default function Home() {
           <Banner />
         </div>
       </section>
-      <section>
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <Test></Test>
-        </div>
-      </section>
+       
       {/* Section 2: Welcome & CTA */}
       <section className="max-w-7xl mx-auto px-4 py-16 text-center">
         <div className="max-w-4xl mx-auto">
